@@ -1,0 +1,21 @@
+{
+  "name": "ifc.js-sandbox",
+  "version": "1.0.0",
+  "description": "This is a package that is suppose to help me to take in my hand this incredible technology called IFC.js",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js",
+    "watch": "rollup -w -c ./rollup.config.js"
+  },
+  "author": "Thisora",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.0",
+    "rollup": "^3.28.0"
+  },
+  "dependencies": {
+    "three": "^0.149.0",
+    "web-ifc-three": "^0.0.125"
+  },
+  "type": "module" 
+}
