@@ -1,8 +1,8 @@
-import { IFCLoader } from "web-ifc-three/IFCLoader/";
+import { IFCLoader } from "../node_modules/three/examples/jsm/loaders/IFCLoader.js";
 
 // Sets up the IFC loading
 const ifcLoader = new IFCLoader();
-
+ifcLoader.ifcManager.setWasmPath("wasm/");
 const input = document.getElementById("file-input");
 input.addEventListener(
   "change",
