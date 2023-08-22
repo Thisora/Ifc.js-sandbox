@@ -1,21 +1,24 @@
 {
-  "name": "ifc.js-sandbox",
-  "version": "1.0.0",
-  "description": "This is a package that is suppose to help me to take in my hand this incredible technology called IFC.js",
-  "main": "app.js",
+  "name": "wiv-hello-world-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js",
-    "watch": "rollup -w -c ./rollup.config.js"
-  },
-  "author": "Thisora",
-  "license": "ISC",
-  "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.0",
-    "rollup": "^3.28.0"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "three": "^0.149.0",
-    "web-ifc-three": "^0.0.125"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "web-ifc-viewer": "^1.0.218"
   },
-  "type": "module" 
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@types/three": "^0.155.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  }
 }
